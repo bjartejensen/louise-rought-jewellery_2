@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600|Poppins:700');
+
+@font-face {
+    font-family: 'Novar';
+    src: url(/assets/Novar.ttf)  format('truetype')
+  }
+
+//Fonts
+$novar-font: Novar;
+$header-font: $novar-font;
+$text-font: 'EB Garamond', serif;
+$menu-font: 'Poppins', sans-serif;
+
+//Colors
+$broken-white: #f2f2f2;
+$header-color:#171D1C; 
+$text-color: rgb(51, 53, 52);

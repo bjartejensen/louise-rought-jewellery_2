@@ -1,0 +1,17 @@
+@import '../../styles';
+
+.in-dept-img-wrapper{
+
+    .in-dept-img{
+        position: relative;
+        height: 50vh; 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: center;
+        background-position: center;
+        /* -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);   */
+        transform: scale(1.0); 
+        margin-bottom: 10%;
+      }
+}

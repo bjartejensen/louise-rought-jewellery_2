@@ -1,0 +1,55 @@
+@import './vars';
+
+
+.in-dept-text-section{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+    height: fit-content;
+    background: rgb(110, 102, 102);
+    
+    .header{
+        position: relative;
+        margin-top: 10%;
+        
+        h2{
+        margin-bottom: 25%;
+        font-family: $header-font;
+        font-size: 13vmin;
+        color: $header-color;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+ }
+
+    .sub-header{
+        position: relative;
+       
+        h4{
+            font-family: $menu-font;
+            color: $text-color;
+            text-transform: lowercase;
+            font-size: 4vmin;
+            
+        }
+    }
+
+    .in-dept-text{
+        position: relative;
+        width: 80vw;
+        margin: auto;
+        
+        p{
+            font-family: $text-font;
+            text-align: left;
+            font-size: 7vmin;
+            font-weight: 600;
+            letter-spacing: 0px;
+            overflow-wrap:break-word;
+        }
+    }
+}
+

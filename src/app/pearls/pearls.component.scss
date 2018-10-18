@@ -1,0 +1,29 @@
+@import '../../styles';
+
+.in-dept-img-wrapper{
+
+    .in-dept-img{
+        position: relative;
+        height: 50vh; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+        background-position: center;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);  
+        transform: scale(1.0); 
+        margin-bottom: 10%;
+      }
+}
+
+.border{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: 0.2px solid rgb(92, 91, 91);
+    height: 50%;
+    width: 70vw;
+}
+
