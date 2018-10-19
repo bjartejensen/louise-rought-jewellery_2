@@ -1,0 +1,33 @@
+@import '../../styles';
+
+.side-navbar-left{
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 100vh;
+    overflow: hidden;
+    right: 0;
+    background: lightcoral;
+    
+    
+    .navbar-item{
+
+        background: lightblue;
+        width: auto;
+        height: fit-content;
+        transform: rotate(90deg);
+        margin-top: 30px;
+
+        a{
+            color: indigo;
+            font-family: $menu-font;
+            font-weight: 700;
+            font-size: 4vmin;
+            
+        }
+    }
+
+}
+

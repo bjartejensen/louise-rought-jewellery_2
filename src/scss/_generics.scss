@@ -1,47 +1,77 @@
 @import './vars';
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 
 .in-dept-text-section{
 
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: flex-start;
+    //margin: auto;
+    margin-top: 0%;
     width: 100vw;
     height: fit-content;
     background: rgb(110, 102, 102);
+
+    .menu-item{
+
+        position: absolute;
+        right:5%;
+        margin-top: 10%;
+        transform: rotate(90deg);
+
+        a{
+            h4{
+                font-family: $menu-font;
+                color: $text-color;
+                text-transform: lowercase;
+                font-size: 3.5vmin;
+
+            }
+        }
+
+    }
     
     .header{
         position: relative;
-        margin-top: 10%;
+        margin-top: 25%;
+        margin-bottom: 17%;
         
         h2{
-        margin-bottom: 25%;
-        font-family: $header-font;
-        font-size: 13vmin;
+        //margin-bottom: 25%;
+        font-family: $text-font;
+        font-size: 60px;
         color: $header-color;
         text-align: center;
         overflow-wrap: break-word;
+        letter-spacing: -1px;
     }
  }
 
     .sub-header{
         position: relative;
+        margin-bottom: 5%;
+        margin-top: 5%;
        
         h4{
             font-family: $menu-font;
             color: $text-color;
             text-transform: lowercase;
             font-size: 4vmin;
-            
         }
     }
 
     .in-dept-text{
         position: relative;
-        width: 80vw;
+        width: 70vw;
         margin: auto;
-        
+        margin-bottom: 10%;
+                
         p{
             font-family: $text-font;
             text-align: left;
@@ -51,5 +81,37 @@
             overflow-wrap:break-word;
         }
     }
+
+    .page-navbar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10%;
+        width: 100vw;
+      //  background: lightseagreen;
+    
+        .navbar-item-wrapper{
+           
+            height: 30vw;
+        }
+    
+        a{
+            h4{
+                font-family: $menu-font;
+                color: $text-color;
+                text-transform: lowercase;
+                font-size: 3.5vmin;
+            }
+        }
+    
+        /* h4{
+            font-weight: 400;
+            font-size: 3vmin;
+            font-family: $menu-font;
+        } */
+    
+    }
+
 }
 

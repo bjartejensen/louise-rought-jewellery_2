@@ -2,9 +2,21 @@
 <div class="container-fluid">
   <div class="row">
     <div class="in-dept-text-section">
+
+      <div class="menu-item">
+        <a><h4>menu</h4></a>
+      </div>
+
+
       <div class="header lrj-header">
-          <h2>Louise <br> Rought <br> Jewellery </h2>
+        <h2>Louise <br> Rought <br> Jewellery </h2>
       </div> 
+
+      <div class="page-navbar">
+        <a><h4></h4></a>
+        <a><h4 class="light">til oversigt</h4></a>
+        <a [routerLink]="['/pearls']"><h4>next</h4></a>
+      </div>
 
       <div class="in-dept-img-wrapper">
         <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
@@ -14,13 +26,13 @@
       <div class="in-dept-text">
         <div class="sub-header">
           <h4>Tanker</h4>
-        </div>
+      </div>
 
-        <p>
+      <p>
           Som smykkedesiger har jeg naturligvis ikke haft vanskeligt ved at lade mig fascinere af ædelmetallers
           skønhed, mystik og formbarhed. 
           <br>
-        </p>
+      </p>
 
         <div class="sub-header">
          <h4>Om formbarhed</h4>
@@ -83,6 +95,14 @@
         </p>
 
       </div>
+
+      <div class="page-navbar">
+          <a><h4>prev</h4></a>
+          <a><h4 class="light">back to top</h4></a>
+          <a [routerLink]="['/pearls']"><h4>next</h4></a>
+      </div>
+
+
     </div>
   </div>
 </div>

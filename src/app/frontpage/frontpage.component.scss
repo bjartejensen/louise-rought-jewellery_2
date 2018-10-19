@@ -1,0 +1,41 @@
+@import '../../styles';
+
+.landing-page-wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: lightsalmon;
+
+    .logo-wrapper{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        background: lightcyan;
+        width: 80vw;
+        height: 50vh;
+
+        .logo{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            width: 80vw;
+            background: lightgreen;
+            word-wrap: break-word;
+            
+            h2{
+                font-family: $text-font;
+                font-size: 8vmax;
+                text-align: center;
+            }
+
+        }
+
+        
+    }
+
+
+}

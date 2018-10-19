@@ -5,10 +5,21 @@ import { AboutComponent } from './about/about.component';
 import {VaerkstedetComponent} from './vaerkstedet/vaerkstedet.component';
 import { PearlsComponent } from './pearls/pearls.component';
 import {SapphiresComponent} from './sapphires/sapphires.component';
+import { FindComponent } from './find/find.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import {FrontpageComponent} from './frontpage/frontpage.component';
+import {MetalsComponent} from './metals/metals.component';
 
 const routes: Routes=[
-    {path:"",component: SapphiresComponent},
-    {path:"about",component: AboutComponent}
+    {path:"",component: VaerkstedetComponent},
+    {path:"about",component: AboutComponent},
+    {path:"gallery",component: GalleryComponent},
+    {path:"pearls",component: PearlsComponent},
+    {path: "sapphires",component: SapphiresComponent},
+    {path: "metals", component:MetalsComponent },
+    {path: "vaerkstedet", component:VaerkstedetComponent},
+    {path:"find",component: FindComponent},
+    { path: '**', component: FrontpageComponent }
 ]
 
 @NgModule({

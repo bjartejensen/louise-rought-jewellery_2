@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+
+<!-- <header>
+   <app-navbar-left></app-navbar-left>
+</header> -->
+<html>
+        
+<body>
+
+  <div class="landing-page-wrapper hide-mega-menu" >
+         <div class="menu" >
+            <ul>
+                <a id="home" (click)="toggleMegaMenu()" [ngClass]="showMegaMenu? 'show-mega-menu':'hide-mega-menu'" [routerLink]="['/gallery']" >Home</a>
+                <a id="gallery"  [routerLink]="['/gallery']" >Gallery</a>
+                <a id="contact"  [routerLink]="['/contact']">Contact</a>
+                <a id="find"  [routerLink]="['/find']">Find</a>
+            </ul>
+          </div> 
+   </div>
+   <router-outlet></router-outlet>   
+</body>
+ 
+</html>

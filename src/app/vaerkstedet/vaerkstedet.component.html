@@ -1,13 +1,21 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="in-dept-text-section">
+      <div class="in-dept-text-section" >
        <!--  <div class="header lrj-header">
             <h2>Vaerkstedet</h2>
         </div>  -->
-  
-        <div class="in-dept-img-wrapper">
+        <div class="menu-item">
+            <a><h4>menu</h4></a>
+       </div>
+
+       <div class="in-dept-img-wrapper">
           <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'">
           </div>
+        </div>
+
+        <div class="page-navbar">
+            <a [routerLink]="['/metals']"><h4>om Guld</h4></a>
+            
         </div>
   
         <div class="in-dept-text">
@@ -55,6 +63,13 @@
           </p>
   
         </div>
+
+        <div class="page-navbar">
+            <a [routerLink]="['/metals']"><h4>om guld</h4></a>
+            <a ><h4 class="light">back to top</h4></a>
+            <a><h4></h4></a>
+        </div>
+
       </div>
     </div>
   </div>

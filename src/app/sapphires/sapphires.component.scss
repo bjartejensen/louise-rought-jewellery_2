@@ -2,15 +2,21 @@
 
 .in-dept-text-section{
 
-   background:  rgb(62, 87, 73);
+   //background:  rgb(62, 87, 73);
 
 }
 
 .in-dept-img-wrapper{
+    position: relative;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    
 
     .in-dept-img{
         position: relative;
         height: 50vh; 
+        width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: center;
@@ -28,7 +34,7 @@
     top: 50%;
     transform: translate(-50%,-50%);
     background: transparent;
-    border: 0.2px solid rgb(92, 91, 91);
+   // border: 0.2px solid rgb(92, 91, 91);
     height: 50%;
     width: 70vw;
 }

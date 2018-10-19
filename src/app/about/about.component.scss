@@ -2,9 +2,15 @@
 
 .in-dept-img-wrapper{
 
+    position: relative;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
     .in-dept-img{
         position: relative;
         height: 50vh; 
+        width: 100vw;
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: center;

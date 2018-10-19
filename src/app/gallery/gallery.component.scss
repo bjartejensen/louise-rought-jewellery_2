@@ -22,14 +22,16 @@
       }
 }
 
-.border{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    background: transparent;
-    border: 0.2px solid rgb(92, 91, 91);
-    height: 50%;
-    width: 70vw;
+a{
+    
+    text-decoration: none;
+
+    &:hover{
+        cursor: crosshair;
+    }
+}
+
+.in-dept-image-section{
+    @extend .in-dept-text-section;
 }
 
