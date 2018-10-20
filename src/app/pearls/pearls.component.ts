@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-pearls',
@@ -9,11 +10,16 @@ export class PearlsComponent implements OnInit {
 
   galleryImages: Array<string>;
 
-  constructor() { 
+  constructor(private router: Router) { 
     this.setImageArray();
   }
 
   ngOnInit() {
+
+/*     this.router.events.filter(event => event instanceof NavigationEnd).subscribe(() => {
+      this.window.scrollTo(0, 0);
+}); */
+
   }
 
   setImageArray(){

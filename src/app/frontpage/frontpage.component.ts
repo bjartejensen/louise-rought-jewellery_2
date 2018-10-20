@@ -19,11 +19,15 @@ export class FrontpageComponent implements OnInit {
   displayLetters_2:Array<string>;
   displayLetters_3:Array<string>;
 
-  constructor() { }
+  galleryImages: Array<string>;
+
+  constructor() {
+    this.setImageArray();
+  }
 
   ngOnInit() {
 
-    debugger;
+    //debugger;
     this.displayWord_1 = "Louise";
     this.displayWord_2 = "Rought";
     this.displayWord_3 = "Jewellery";
@@ -38,7 +42,21 @@ export class FrontpageComponent implements OnInit {
     this.displayLetters_2.push(" ");
     this.displayLetters_3 = this.displayWord_3.split('');
     this.displayLetters_3.push(" ");
- 
+   }
+
+  setImageArray(){
+
+    this.galleryImages = new Array<string>();
+
+    let imgPath= "../../assets/img/Compressed/";
+
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1189_cmp"+".jpg" );
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1705_cmp"+".jpg");
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1463_cmp"+".jpg");
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1360_cmp"+".jpg");
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1330_cmp"+".jpg");
+
+
   }
 
 }

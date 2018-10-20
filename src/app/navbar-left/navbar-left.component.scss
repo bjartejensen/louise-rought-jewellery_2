@@ -2,32 +2,42 @@
 
 .side-navbar-left{
 
-    position: fixed;
+    position: absolute;
     display: flex;
-    justify-content: center;
-    width: 15vw;
-    height: 100vh;
-    overflow: hidden;
-    right: 0;
-    background: lightcoral;
-    
-    
-    .navbar-item{
+    justify-content: flex-end;
+    align-content: center;
+    width: 7.5vw;
+    max-width:40px;
+    height:100vh;
+    z-index: 1000;
+    right: 0%;
+   // background: lawngreen;
 
-        background: lightblue;
-        width: auto;
-        height: fit-content;
+    .navbar-item{
+        
+      //  width: auto;
+       // height: fit-content;
         transform: rotate(90deg);
         margin-top: 30px;
+       // background: lightcoral;
+        padding: 0px;
+        overflow: hidden;
 
         a{
-            color: indigo;
+            
             font-family: $menu-font;
             font-weight: 700;
-            font-size: 4vmin;
-            
+            font-size: 3.5vmin;
+            color:$text-color;
+
+            &:hover, &:focus{
+                    
+                color: rgb(79, 79, 80);
+                &:hover{
+                    cursor: crosshair;
+                }
+            }
         }
     }
-
 }
 

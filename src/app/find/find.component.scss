@@ -3,6 +3,10 @@
 .find-me-section{
     @extend .in-dept-text-section;
     background: rgb(226, 225, 225);
+
+    .page-navbar{
+        margin-top: 10%;
+    }
 }
 
 .gmap-location {

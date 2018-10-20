@@ -1,3 +1,30 @@
-<p>
-  single-jewellery works!
-</p>
+<div class="container">
+<div class="row">
+
+    <div class="in-dept-text-section">
+ 
+       <div class="header lrj-header">
+          <h2>{{selectedGalleryItem.name}}</h2>
+       </div> 
+
+       <div class="in-dept-img-wrapper">
+         <div class="in-dept-img" [style.background-image]="'url(' + backgroundImageUrl + ')'">
+         </div>
+       </div>
+ 
+       <div class="in-dept-text">
+         <div class="sub-header">
+           <h4>made with</h4>
+         </div>
+ 
+         <p> {{selectedGalleryItem.description}}</p>
+       </div>
+
+       <div class="page-navbar">
+          <a [routerLink]="['/gallery']"><h4>Gallery</h4></a> 
+       </div>
+
+    </div>
+    
+</div>
+</div>

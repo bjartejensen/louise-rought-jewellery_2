@@ -9,15 +9,36 @@
 }
 
 .landing-page-wrapper{
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgb(248, 77, 3);
-    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+     z-index: 100;
     overflow: visible;
-   
+    background: $background-color;
+    overflow-x: hidden;
+
+    .close-button{
+        position: absolute;
+        right: 4%;
+        top: 30px;
+        
+        a{
+            h4{
+                
+                font-size: 3.5vmin;
+                font-family: $menu-font;
+                transform: rotate(90deg);
+
+                &:hover{
+                    cursor: crosshair;
+                }
+            }
+        }
+    }
        
     .menu{
         position: relative;
@@ -25,7 +46,6 @@
         flex-direction: column;
         align-content: center;
         margin: auto;
-        background: lightgreen;
         width: 60vw;
         height: 50vh;
         top: 20%;
@@ -38,11 +58,12 @@
             list-style: none;
             height: 30vh;
             width: 30vw;
-            background: blue;      
+            //background: blue;      
 
             a{
                 position: relative;
                 color: black;
+                font-weight: 700;
                 text-decoration: none;
                 font-family: $text-font;
                 font-size:3rem;
@@ -61,3 +82,60 @@
         } 
     }
 }
+
+
+.side-navbar-left{
+    position: fixed;
+    width: 7.5vw;
+    height: 100vw;
+    background: lightgreen;
+    left: 0%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.side-navbar-right{
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 7.5vw;
+    height:100vh;
+    overflow: hidden;
+    //z-index: 100;
+    right: 0%;
+    background: lawngreen;
+
+    .navbar-item{
+        position: relative;        
+        width: auto;
+        height: fit-content;
+        transform: rotate(90deg);
+        margin: auto;
+        margin-top: 30px;
+        align-content: center;
+        justify-content: center;
+     //   background: lightcoral;
+        //padding: 0px;
+
+        a{
+            
+            font-family: $menu-font;
+            font-weight: 700;
+            font-size: 3.5vmin;
+            color: $text-color;
+
+            &:hover, &:focus{
+                    
+                color: rgb(79, 79, 80);
+                &:hover{
+                    cursor: crosshair;
+                }
+            }
+            
+        }
+    }
+
+}
+
+

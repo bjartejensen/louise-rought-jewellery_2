@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="row">
+    <div id="top-section" class="row">
       <div class="in-dept-text-section" >
        <!--  <div class="header lrj-header">
             <h2>Vaerkstedet</h2>
@@ -13,9 +13,8 @@
           </div>
         </div>
 
-        <div class="page-navbar">
-            <a [routerLink]="['/metals']"><h4>om Guld</h4></a>
-            
+        <div class="page-navbar" >
+           <a [routerLink]="['/metals']"><h4>overview</h4></a>
         </div>
   
         <div class="in-dept-text">
@@ -65,9 +64,9 @@
         </div>
 
         <div class="page-navbar">
-            <a [routerLink]="['/metals']"><h4>om guld</h4></a>
-            <a ><h4 class="light">back to top</h4></a>
-            <a><h4></h4></a>
+            <a [routerLink]="['/metals']"><h4>guld</h4></a>
+            <a pageScroll [pageScrollDuration]="700"  href="#top-section" ><h4 class="light">to top</h4></a>
+            
         </div>
 
       </div>

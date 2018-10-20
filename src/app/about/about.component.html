@@ -1,22 +1,15 @@
 
 <div class="container-fluid">
-  <div class="row">
+  <div id="top-section" class="row">
     <div class="in-dept-text-section">
 
-      <div class="menu-item">
-        <a><h4>menu</h4></a>
-      </div>
-
+      <div class="page-navbar">
+          <a [routerLink]="['/frontpage']" fragment="about"><h4 class="light">overview</h4></a>
+      </div> 
 
       <div class="header lrj-header">
         <h2>Louise <br> Rought <br> Jewellery </h2>
       </div> 
-
-      <div class="page-navbar">
-        <a><h4></h4></a>
-        <a><h4 class="light">til oversigt</h4></a>
-        <a [routerLink]="['/pearls']"><h4>next</h4></a>
-      </div>
 
       <div class="in-dept-img-wrapper">
         <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
@@ -97,9 +90,8 @@
       </div>
 
       <div class="page-navbar">
-          <a><h4>prev</h4></a>
-          <a><h4 class="light">back to top</h4></a>
-          <a [routerLink]="['/pearls']"><h4>next</h4></a>
+          <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 class="light">back to top</h4></a>
+          <a [routerLink]="['/pearls']"><h4>perler</h4></a>
       </div>
 
 

@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app.routing.module';
 
-
-//import {NgsRevealModule} from 'ng-scrollreveal';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
+import {NgsRevealModule} from 'ng-scrollreveal';
 
 import { AppComponent, cdMegaMenu } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -39,8 +38,9 @@ import { MetalsComponent } from './metals/metals.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollModule
-    //NgsRevealModule
+    NgxPageScrollModule,
+    NgsRevealModule.forRoot()
+    
     
   ],
   providers: [],

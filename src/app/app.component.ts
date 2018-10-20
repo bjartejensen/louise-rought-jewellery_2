@@ -24,14 +24,10 @@ export class cdMegaMenu implements AfterViewInit, OnInit {
 
     @HostListener('click', ['$event']) onclick(event) {
 
-    debugger;
+    //debugger;
      this.showMegaMenu = !this.showMegaMenu;
     
     }
-
-
-
-
 
 }
 
@@ -45,10 +41,12 @@ export class AppComponent {
 
   showMegaMenu: boolean;
 
-  constructor(){}
+  constructor(){
+    this.showMegaMenu = false;
+  }
 
   toggleMegaMenu(){
-    debugger;
+    //debugger;
     this.showMegaMenu =!this.showMegaMenu;
   }
 

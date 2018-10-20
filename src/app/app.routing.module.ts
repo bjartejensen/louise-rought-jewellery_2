@@ -9,11 +9,13 @@ import { FindComponent } from './find/find.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import {FrontpageComponent} from './frontpage/frontpage.component';
 import {MetalsComponent} from './metals/metals.component';
+import {SingleJewelleryComponent} from './single-jewellery/single-jewellery.component';
 
 const routes: Routes=[
-    {path:"",component: VaerkstedetComponent},
+    {path:"",component: FrontpageComponent},
     {path:"about",component: AboutComponent},
     {path:"gallery",component: GalleryComponent},
+    {path:"gallery/:id",component:SingleJewelleryComponent,pathMatch: 'full'},
     {path:"pearls",component: PearlsComponent},
     {path: "sapphires",component: SapphiresComponent},
     {path: "metals", component:MetalsComponent },
@@ -23,7 +25,10 @@ const routes: Routes=[
 ]
 
 @NgModule({
-    imports: [BrowserModule,RouterModule.forRoot(routes,{onSameUrlNavigation: 'reload'})],
+    imports: [BrowserModule,
+        RouterModule.forRoot(routes,{onSameUrlNavigation: 'reload'}),
+        RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})
+    ],
     exports: [RouterModule]
 })
 

@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarLeftComponent implements OnInit {
 
-  constructor() { }
+  showMenu: boolean;
+
+  constructor() {
+    this.showMenu = false;
+  }
+
+  onShowMenu($event) {
+    console.log("clicked");
+    this.showMenu = !this.showMenu;
+  }
 
   ngOnInit() {
   }

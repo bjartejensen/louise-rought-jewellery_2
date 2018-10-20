@@ -1,13 +1,22 @@
 
 <div class="container-fluid">
 
-    <div class="row" id="section-top">
+    <div class="row" id="section-top" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '700px', origin:'top'}">
+
+      
+      
       <a [routerLink]="['/', 'gallery', 'j1']" >
         <div class="in-dept-image-section">
     
-          <div class="header lrj-header">
-              <h2>Fresh Water Drop</h2>
-          </div> 
+        <div class="page-navbar" style="top: 5%">
+          <a [routerLink]="['/']"><h4>overview</h4></a>
+        </div>
+
+        <div class="header lrj-header">
+           <h2>Fresh Water Drop</h2>
+        </div> 
+
+        
 
           <div class="in-dept-img-wrapper">
             <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
@@ -15,14 +24,6 @@
           </div>
     
           <div class="in-dept-text">
-            <div class="sub-header">
-              <h4>Tanker</h4>
-          </div>
-    
-            <p>
-              Det jeg har tænkt omkring dette smykke er...
-              <br>
-            </p>
           </div>
         </div>
       </a>
@@ -43,14 +44,7 @@
            </div>
      
            <div class="in-dept-text">
-             <div class="sub-header">
-               <h4>Tanker</h4>
-             </div>
-     
-             <p>
-               Det jeg har tænkt omkring dette smykke er...
-               <br>
-             </p>
+           
            </div>
          </div>
         </a>
@@ -70,14 +64,7 @@
            </div>
      
            <div class="in-dept-text">
-             <div class="sub-header">
-               <h4>Tanker</h4>
-             </div>
-     
-             <p>
-               Det jeg har tænkt omkring dette smykke er...
-               <br>
-             </p>
+          
            </div>
          </div>
         </a>
@@ -97,14 +84,7 @@
            </div>
      
            <div class="in-dept-text">
-             <div class="sub-header">
-               <h4>Tanker</h4>
-             </div>
-     
-             <p>
-               Det jeg har tænkt omkring dette smykke er...
-               <br>
-             </p>
+          
            </div>
          </div>
         </a>
@@ -124,14 +104,7 @@
            </div>
      
            <div class="in-dept-text">
-             <div class="sub-header">
-               <h4>Tanker</h4>
-             </div>
-     
-             <p>
-               Det jeg har tænkt omkring dette smykke er...
-               <br>
-             </p>
+          
            </div>
          </div>
         </a>
@@ -151,14 +124,7 @@
            </div>
      
            <div class="in-dept-text">
-             <div class="sub-header">
-               <h4>Tanker</h4>
-             </div>
-     
-             <p>
-               Det jeg har tænkt omkring dette smykke er...
-               <br>
-             </p>
+            
            </div>
          </div>
         </a>

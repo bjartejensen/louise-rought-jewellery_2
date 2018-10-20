@@ -1,21 +1,38 @@
 
-<!-- <header>
-   <app-navbar-left></app-navbar-left>
-</header> -->
+<header>
+<div class="side-navbar-right">
+    <div class="navbar-item">
+       <a  (click)="toggleMegaMenu($event)">{{ showMegaMenu == false ? 'menu' : 'close' }}</a> 
+       
+    </div> 
+</div>
+
+<div class="side-navbar-left">
+    <div class="navbar-item">
+    <!--   <a  (click)="toggleMegaMenu($event)">{{ showMegaMenu == false ? 'menu' : 'close' }}</a>  -->
+    </div> 
+</div>
+
+</header>
 <html>
         
 <body>
 
-  <div class="landing-page-wrapper hide-mega-menu" >
-         <div class="menu" >
+<div class="landing-page-wrapper" *ngIf="showMegaMenu" >
+  
+  <div class="close-button">
+      <a (click)="toggleMegaMenu($event)"><h4>Close</h4></a>
+</div>
+  
+  <div class="menu" >
             <ul>
-                <a id="home" (click)="toggleMegaMenu()" [ngClass]="showMegaMenu? 'show-mega-menu':'hide-mega-menu'" [routerLink]="['/gallery']" >Home</a>
-                <a id="gallery"  [routerLink]="['/gallery']" >Gallery</a>
-                <a id="contact"  [routerLink]="['/contact']">Contact</a>
-                <a id="find"  [routerLink]="['/find']">Find</a>
+                <a id="home" (click)="toggleMegaMenu($event)" [routerLink]="['/frontpage']" >Home</a>
+                <a id="gallery"  (click)="toggleMegaMenu($event)"  [routerLink]="['/gallery']" >Gallery</a>
+                <a id="contact" (click)="toggleMegaMenu($event)"  [routerLink]="['/contact']">Contact</a>
+                <a id="find" (click)="toggleMegaMenu($event)"   [routerLink]="['/find']">Find</a>
             </ul>
           </div> 
-   </div>
+</div> 
    <router-outlet></router-outlet>   
 </body>
  
