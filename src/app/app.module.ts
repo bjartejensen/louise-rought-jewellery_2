@@ -18,6 +18,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SingleJewelleryComponent } from './single-jewellery/single-jewellery.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { MetalsComponent } from './metals/metals.component';
+import { SustanabilityComponent } from './sustanability/sustanability.component';
+import { FrontpageNewComponent,cdFpSectionOuttro } from './frontpage-new/frontpage-new.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,10 @@ import { MetalsComponent } from './metals/metals.component';
     GalleryComponent,
     SingleJewelleryComponent,
     FrontpageComponent,
-    MetalsComponent
+    MetalsComponent,
+    SustanabilityComponent,
+    FrontpageNewComponent,
+    cdFpSectionOuttro
   ],
   imports: [
     BrowserModule,

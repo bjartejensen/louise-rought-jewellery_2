@@ -1,26 +1,104 @@
 @import '../../styles';
 
 .find-me-section{
-    @extend .in-dept-text-section;
-    background: rgb(226, 225, 225);
+    position: relative;
+    margin: auto;
+    width: 85vw;
+    height: fit-content;
+    min-height: 100vh;
+    background: $background-color;
+    overflow-y: hidden;
 
     .page-navbar{
-        margin-top: 10%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10%;
+        top: 5%;
+        width: 85vw;
+    
+        .navbar-item-wrapper{
+           
+            height: 30vw;
+        }
+    
+        a{
+            h4{
+                font-family: $menu-font;
+                color: $text-color;
+                text-transform: lowercase;
+                font-size: 3.5vmin;
+            }
+        }
+}
+
+    .sub-header{
+        position: relative;
+        margin-bottom: 0%;
+        margin-top: 5%;
+    
+        h4{
+            font-family: $menu-font;
+            color: $text-color;
+            text-transform: lowercase;
+            font-size: 4vmin;
+        }
     }
-}
 
-.gmap-location {
-    position: relative;
-    align-self: center;
-    justify-content: center;
-    overflow: hidden !important;
-}
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        top: 5%;
+        margin-top: 5%;
+        margin-bottom: 17%;  
+        
+        h2{
+        font-family: $text-font;
+        font-size: 8vmin;
+        color: $header-color;
+        text-align: center;
+        overflow-wrap: break-word;
+        letter-spacing: -1px;
+        width: fit-content;
+    }
+    }
 
-.gmap{
-    width: 70vw;
-    height: 50vh;
-    max-height: 400px;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);  
-    border: solid 2px transparent;
+    .in-dept-text{
+        position: relative;
+        width: 70vw;
+        margin: auto;
+        margin-bottom: 10%;
+                
+        p{
+            font-family:$menu-font;
+            text-align: left;
+            font-size: 4vmin;
+            font-weight: 400;
+            letter-spacing: 0px;
+            overflow-wrap:break-word;
+            color:$text-color;
+        }
+    }
+    
+    .gmap-location {
+        position: relative;
+        align-self: center;
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
+        overflow: hidden !important;
+       
+    }
+
+    .gmap{
+        width: 70vw;
+        height: 50vh;
+        max-height: 400px;
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);  
+        border: solid 2px transparent;
+    }
 }

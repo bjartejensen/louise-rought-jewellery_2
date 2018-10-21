@@ -1,209 +1,253 @@
 <div class="container-fluid">
-  
-<div class="row">
-  <div class="description-section-wrapper">
-    
-    <div class="in-dept-text-section">
+    <div id="section-about" class="row">
+      <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
  
-        <div class="header lrj-header">
-           <h2>Louise Rought Jewellery </h2>
+        <div class="header lrj-header"  >
+           <h2>Louise Rought <br> Jewellery </h2>
         </div> 
  
-        <div class="in-dept-img-wrapper">
-          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+        <div class="in-dept-img-wrapper" >
+          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[5]  + ')'">
           </div>
         </div>
 
         <div class="in-dept-text-local">
-           <div class="sub-header">
+           <div class="sub-header"  >
             <h4>louise rought</h4>
            </div> 
+
            <p>Håndlavede, bæredygtige smykker i Ryesgade.
                 Bæredygtige perler, safirer. Bæredygtigt guld
                 og nænsomt håndværk.
             </p> 
         </div>
         
-        <div class="page-navbar">
+        <div class="page-navbar" >
             <a [routerLink]="['/about']"><h4>Read more</h4></a> 
          </div>
-  
-        
 
-        <div class="scroll-indicator">
-            <a pageScroll [pageScrollDuration]="700"  href="#sapphires">
+        <div class="scroll-indicator" >
+            <a pageScroll [pageScrollDuration]="700"  href="#section-sustainability">
               <h4 class="light">scroll</h4>
             </a>
           </div>
- 
      </div>
+  <hr>
 
-  </div>
 </div>
-    
 
-<div class="row">
-        <div class="description-section-wrapper">
+
+<div id="section-sustainability" class="row">
+    <div >
+      
+        <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
+ 
+            <div class="header lrj-header"  >
+               <h2>Sustainability</h2>
+            </div> 
+     
+            <div class="in-dept-img-wrapper" >
+              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+              </div>
+            </div>
+    
+            <div class="in-dept-text-local">
+               <div class="sub-header"  >
+                <h4>sustainability</h4>
+               </div> 
+    
+               <p  >
+                  Læs om materialevalg, samarbejdspartnere og 
+                  se udvalgte smykker
+                </p> 
+            </div>
+            
+            <div class="page-navbar" >
+                <a [routerLink]="['/sustainability']"><h4>Read more</h4></a> 
+             </div>
+            
+    
+            <div class="scroll-indicator">
+                <a pageScroll [pageScrollDuration]="700"  href="#section-pearls">
+                  <h4 class="light">scroll</h4>
+                </a>
+            </div>
+     
+         </div>
+  
+    </div>
+    
+    <hr>
+
+</div>
+
+<div id="section-pearls" class="row">
+        <div >
           
-          <div class="in-dept-text-section">
-       
-              <div class="header lrj-header">
-                 <h2>Louise Rought Jewellery </h2>
-              </div> 
-       
-              <div class="in-dept-img-wrapper">
-                <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+            <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
+ 
+                <div class="header" >
+                   <h2>Pearls</h2>
+                </div> 
+         
+                <div class="in-dept-img-wrapper"  >
+                  <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1]  + ')'">
+                  </div>
                 </div>
-              </div>
-      
-              <div class="in-dept-text-local">
-                 <div class="sub-header">
-                  <h4>louise rought</h4>
-                 </div> 
-                 <p>Håndlavede, bæredygtige smykker i Ryesgade.
-                      Bæredygtige perler, safirer. Bæredygtigt guld
-                      og nænsomt håndværk.
-                  </p> 
-              </div>
-              
-              <div class="page-navbar">
-                  <a [routerLink]="['/about']"><h4>Read more</h4></a> 
-               </div>
         
-              
-      
-              <div class="scroll-indicator">
-                  <a pageScroll [pageScrollDuration]="700"  href="#sapphires">
-                    <h4 class="light">scroll</h4>
-                  </a>
+                <div class="in-dept-text-local">
+                   <div class="sub-header" >
+                    <h4>pearls</h4>
+                   </div> 
+        
+                   <p >
+                      Se billeder af udvalgte perlesmykker og 
+                      læs om mit arbejde med kultur- og ferskvandsperler. 
+                    </p> 
                 </div>
-       
-           </div>
+                
+                <div class="page-navbar"  >
+                    <a [routerLink]="['/pearls']"><h4>Read more</h4></a> 
+                 </div>
+          
+                <div class="scroll-indicator">
+                    <a pageScroll [pageScrollDuration]="700"  href="#section-sapphires">
+                      <h4 class="light">scroll</h4>
+                    </a>
+                  </div>
+         
+             </div>
       
         </div>
-      </div>
+        
+        <hr>
 
-<div class="row">
+</div>
+
+<div id="section-sapphires" class="row">
             <div class="description-section-wrapper">
               
-              <div class="in-dept-text-section">
-           
-                  <div class="header lrj-header">
-                     <h2>Louise Rought Jewellery </h2>
-                  </div> 
-           
-                  <div class="in-dept-img-wrapper">
-                    <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+                <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
+ 
+                    <div class="header lrj-header"  >
+                       <h2>Sapphires</h2>
+                    </div> 
+             
+                    <div class="in-dept-img-wrapper" >
+                      <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[2]  + ')'">
+                      </div>
                     </div>
-                  </div>
-          
-                  <div class="in-dept-text-local">
-                     <div class="sub-header">
-                      <h4>louise rought</h4>
-                     </div> 
-                     <p>Håndlavede, bæredygtige smykker i Ryesgade.
-                          Bæredygtige perler, safirer. Bæredygtigt guld
-                          og nænsomt håndværk.
-                      </p> 
-                  </div>
-                  
-                  <div class="page-navbar">
-                      <a [routerLink]="['/about']"><h4>Read more</h4></a> 
-                   </div>
             
-                  
-          
-                  <div class="scroll-indicator">
-                      <a pageScroll [pageScrollDuration]="700"  href="#sapphires">
-                        <h4 class="light">scroll</h4>
-                      </a>
+                    <div class="in-dept-text-local">
+                       <div class="sub-header">
+                        <h4>sapphires</h4>
+                       </div> 
+            
+                       <p  >
+                         Introduktion til mit arbejde med safirer
+                        </p> 
                     </div>
-           
-               </div>
+                    
+                    <div class="page-navbar" >
+                        <a [routerLink]="['/sapphires']"><h4>Read more</h4></a> 
+                     </div>
+            
+                    <div class="scroll-indicator" >
+                        <a pageScroll [pageScrollDuration]="700"  href="#section-metals">
+                          <h4 class="light">scroll</h4>
+                        </a>
+                      </div>
+             
+                </div>
+          
           
             </div>
+
+            <hr>
 </div>
 
-<div class="row">
+<div id="section-metals" class="row">
                 <div class="description-section-wrapper">
                   
-                  <div class="in-dept-text-section">
-               
-                      <div class="header lrj-header">
-                         <h2>Louise Rought Jewellery </h2>
-                      </div> 
-               
-                      <div class="in-dept-img-wrapper">
-                        <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+                    <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
+ 
+                        <div class="header lrj-header"  >
+                           <h2>Metals and gold</h2>
+                        </div> 
+                 
+                        <div class="in-dept-img-wrapper" >
+                          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[3]  + ')'">
+                          </div>
                         </div>
-                      </div>
-              
-                      <div class="in-dept-text-local">
-                         <div class="sub-header">
-                          <h4>louise rought</h4>
-                         </div> 
-                         <p>Håndlavede, bæredygtige smykker i Ryesgade.
-                              Bæredygtige perler, safirer. Bæredygtigt guld
-                              og nænsomt håndværk.
-                          </p> 
-                      </div>
-                      
-                      <div class="page-navbar">
-                          <a [routerLink]="['/about']"><h4>Read more</h4></a> 
-                       </div>
                 
-                      
-              
-                      <div class="scroll-indicator">
-                          <a pageScroll [pageScrollDuration]="700"  href="#sapphires">
-                            <h4 class="light">scroll</h4>
-                          </a>
+                        <div class="in-dept-text-local">
+                           <div class="sub-header"  >
+                            <h4>metals and gold</h4>
+                           </div> 
+                
+                           <p  >
+                              Læs mere om mit materialevalg og
+                              bæredygtighed
+                            </p> 
                         </div>
-               
-                   </div>
-              
+                        
+                        <div class="page-navbar" >
+                            <a [routerLink]="['/metals']"><h4>Read more</h4></a> 
+                         </div>
+                
+                        <div class="scroll-indicator">
+                            <a pageScroll [pageScrollDuration]="700"  href="#section-vaerkstedet">
+                              <h4 class="light">scroll</h4>
+                            </a>
+                          </div>
+                 
+                    </div>
+                
                 </div>
+                <hr>
 </div>
 
-<div class="row">
+<div id="section-vaerkstedet" class="row">
                     <div class="description-section-wrapper">
                       
-                      <div class="in-dept-text-section">
-                   
-                          <div class="header lrj-header">
-                             <h2>Louise Rought Jewellery </h2>
-                          </div> 
-                   
-                          <div class="in-dept-img-wrapper">
-                            <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0]  + ')'">
+                    <div class="in-dept-text-section" [ngsReveal]="{ duration: 500, delay:300,scale:0.0 , opacity: 0 , distance: '0px', origin:'top'}">
+ 
+                            <div class="header lrj-header" >
+                               <h2>Vaerkstedet</h2>
+                            </div> 
+                     
+                            <div class="in-dept-img-wrapper" >
+                              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[4]  + ')'">
+                              </div>
                             </div>
-                          </div>
-                  
-                          <div class="in-dept-text-local">
-                             <div class="sub-header">
-                              <h4>louise rought</h4>
-                             </div> 
-                             <p>Håndlavede, bæredygtige smykker i Ryesgade.
-                                  Bæredygtige perler, safirer. Bæredygtigt guld
-                                  og nænsomt håndværk.
-                              </p> 
-                          </div>
-                          
-                          <div class="page-navbar">
-                              <a [routerLink]="['/about']"><h4>Read more</h4></a> 
-                           </div>
                     
-                          
-                  
-                          <div class="scroll-indicator">
-                              <a pageScroll [pageScrollDuration]="700"  href="#sapphires">
-                                <h4 class="light">scroll</h4>
-                              </a>
+                            <div class="in-dept-text-local">
+                               <div class="sub-header"  [ngsReveal]="{ duration: 500, delay:500,scale: 1.0 , opacity: 0 , distance: '25px', origin:'top'}">
+                                <h4>vaerkstedet</h4>
+                               </div> 
+                    
+                               <p >
+                                  En personlig, hyggelig og eksklusiv
+                                  ramme om dit smykkevalg.
+                                </p> 
                             </div>
-                   
-                       </div>
+                            
+                            <div class="page-navbar" >
+                                <a [routerLink]="['/vaerkstedet']"><h4>Read more</h4></a> 
+                             </div>
+                    
+                            <div class="scroll-indicator" >
+                                <a pageScroll [pageScrollDuration]="700"  href="#section-about">
+                                  <h4 class="light">to top</h4>
+                                </a>
+                              </div>
+                     
+                    </div>
                   
                     </div>
+
+<hr>
+  
 </div>
 
 </div>

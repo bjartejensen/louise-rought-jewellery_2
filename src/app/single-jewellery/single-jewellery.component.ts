@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import anime from 'animejs';
 
 export class GalleryItem {
   
@@ -19,7 +20,7 @@ export class GalleryItem {
   templateUrl: './single-jewellery.component.html',
   styleUrls: ['./single-jewellery.component.scss']
 })
-export class SingleJewelleryComponent implements OnInit {
+export class SingleJewelleryComponent implements OnInit, AfterViewInit {
 
   singleJewelleryId: string;
   galleryItems: GalleryItem[];
@@ -29,9 +30,52 @@ export class SingleJewelleryComponent implements OnInit {
   nextUrl: string;
   images: any;
 
+  animateIntro1:any;
+  animateIntro2:any;
+
   constructor(private route: ActivatedRoute) {}
+  
+
+  ngAfterViewInit(){
+
+    this.animateIntrofunc();
+
+  }
+
+  animateIntrofunc(){
+
+    this.animateIntro1 = anime({
+      targets: 'div.in-dept-text-section',
+      /* opacity: [
+        { value: 1, duration: 0 },
+        { value: 0, duration: 800 }
+      ],   */
+      width: '100vw',
+      easing: 'easeInOutQuad',
+      duration: 300,
+      delay: 100,
+    }); 
+
+    this.animateIntro2 = anime({
+      targets: 'div.in-dept-img-wrapper',
+       opacity: [
+        { value: 0, duration: 0 },
+        { value: 1, duration: 800 }
+      ],  
+      easing: 'easeInOutQuad',
+      duration: 300,
+      delay: 300,
+    }); 
+    
+
+    this.animateIntro1.play();
+    this.animateIntro2.play();
+
+  }
 
   ngOnInit() {
+
+   
 
     this.setSingleJewelleryItems();
 

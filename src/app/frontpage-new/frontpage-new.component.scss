@@ -1,0 +1,116 @@
+@import '../../styles';
+
+.scroll-indicator{
+    position: relative;
+   // background: lightblue;
+    margin: auto;
+    margin-top: 0px;
+    top:-70px;
+    width: fit-content;
+    //transform: rotate(-90deg);
+  
+      a{
+        
+       // background: lawngreen;
+        margin: 0%;
+
+        h4{
+            font-family: $menu-font;
+            color: $text-color;
+            text-transform: lowercase;
+            font-size: 3.5vmin;
+         //   background: lawngreen;
+
+            @media(min-width:768px){
+                margin-top: -70%;
+                font-size: 30px;
+            }
+        }
+      }
+  }
+
+.in-dept-img-wrapper{
+
+    position: relative;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 15%;
+
+    .in-dept-img{
+        position: relative;
+        height: 50vh; 
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: center;
+        background-position: center;
+        -webkit-filter: grayscale(0%); 
+        filter: grayscale(0%);   
+       // animation: color-animation 00ms ease-in; /* IE 10+, Fx 29+ */
+        transform: scale(1.0); 
+        margin-bottom: 10%;
+
+        @media(min-width: 768px){
+            height: 50vh; 
+            width: 100vw;
+            background-size: cover;
+            top: -60px;
+        }
+
+      }
+}
+
+/* @keyframes color-animation {
+    0%   { filter: grayscale(100%); }
+    100% { filter: grayscale(0%); }
+  } */
+
+a{
+    
+    text-decoration: none;
+
+    &:hover{
+        cursor: crosshair;
+    }
+}
+
+.in-dept-image-section{
+    @extend .in-dept-text-section;
+    height: 100vh;
+
+   /*  .header{
+        h2{
+            font-size: 7vmin;
+        }
+    } */
+ 
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 80px; //25%;
+        margin-bottom: 50px;//17%;  
+      //  background: lightblue;
+
+        @media(min-width: 768px){
+           // background: lightcoral;   
+        }
+        
+        h2{
+        font-family: $text-font;
+        font-size: 7vmin;
+        color: $header-color;
+        text-align: center;
+        overflow-wrap: break-word;
+        letter-spacing: -1px;
+        width: fit-content;
+
+       
+
+    } 
+    
+}
+
+}
+

@@ -6,76 +6,84 @@
         <a><h4>menu</h4></a>
       </div>
 
-      <div class="page-navbar">
+      <div class="page-navbar"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
           <a [routerLink]="['/frontpage']"><h4 class="light">overview</h4></a>
       </div>
     
-      <div class="header lrj-header">
-        <h2>Om mit guld</h2>
+      <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+        <h2>Om guld</h2>
       </div>  
      
-      <div class="in-dept-img-wrapper">
+      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 , distance: '100px', origin:'top'}">
           <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'">
           </div>
       </div>
   
       <div class="in-dept-text">
-          <div class="sub-header">
-            <h4>Om guld</h4>
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <h4>Om guld og metaller</h4>
           </div>
   
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Guld bliver til stadighed vanskeligere at udvinde, 
               og samtidig har udvindingen store konsekvenser 
               for miljøet.  
             <br>
+            <br>
           </p>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               De guldsmykker, du køber hos os, er derfor produceret af genbrugsguld.
             <br>
             Såkaldt re-cirkuleret guld.
+            <br>
+            <br>
           </p>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>Perler og miljø</h4>
           </div>
   
-           <p>
+           <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Guld er måske det materiale, der gennem tiden er blevet genbrugt flest gange pga. værdien. 
                Særligt i perioder med krise er mange smykker blevet solgt og sendt til affinering, hvilket vil sige, at det renses og ender som rent guld, hvorefter det sendes tilbage i kredsløbet, så nye smykker kan se dagens lys. 
             <br>
+            <br>
           </p>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>Aktivt guld</h4>
           </div>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Aktivt Guld samarbejder med anerkendte europæiske samarbejdspartnere, der igennem opnået LBMA-certificering (The London Bullion Market Association), og RJC ( Responsible Jewellery Council), 
               garanterer en overholdelse af miljømæssige og etiske retningslinjer.
             <br>
+            <br>
           </p>
-          <p>
+
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
             Det guld, vi køber hos Aktiv Guld, er netop genbrugsguld. 
+            <br>
             <br>
           </p>
          
   
-          <div class="in-dept-img-wrapper">
-              <div class="in-dept-img" style='filter:grayscale(100%)' [style.background-image]="'url(' + galleryImages[0] + ')'" >
+          <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
+              <div class="in-dept-img"  [style.background-image]="'url(' + galleryImages[1] + ')'" >
               </div>
           </div>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>På besøg</h4>
           </div>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
             De besøger regelmæssigt deres samarbejdspartnere på deres perlefarme i Fransk Polynesien, på Filippinerne, Indonesien, og Mexico. 
             <br>
+            <br>
           </p>
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
             Netop ved at besøge sine leverandører  skabes den bedste dialog og involvering med producenterne
             således at de tilsikres at perledyrkningen foregår i overensstemmelse med bæredygtighedsprincipper.
             <br>
@@ -84,10 +92,10 @@
 
       </div>
 
-      <div class="page-navbar">
-            <a [routerLink]="['/sapphires']"><h4>safirer</h4></a>
-            <a pageScroll [pageScrollDuration]="700"  href="#top-section" > <h4 class="light">back to top</h4></a>
-            <a [routerLink]="['/vaerkstedet']"><h4>vaerkstedet</h4></a>
+      <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <a [routerLink]="['/sapphires']"><h4>p: safirer</h4></a>
+            <a pageScroll [pageScrollDuration]="700"  href="#top-section" > <h4 class="light">top</h4></a>
+            <a [routerLink]="['/vaerkstedet']"><h4>n: vaerkstedet</h4></a>
       </div>
       
       </div>

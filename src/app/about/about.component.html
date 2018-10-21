@@ -1,97 +1,151 @@
-
 <div class="container-fluid">
   <div id="top-section" class="row">
     <div class="in-dept-text-section">
 
-      <div class="page-navbar">
-          <a [routerLink]="['/frontpage']" fragment="about"><h4 class="light">overview</h4></a>
+      <div class="page-navbar" style="top:5%"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+          <a [routerLink]="['/frontpage']" ><h4 >overview</h4></a>
       </div> 
 
-      <div class="header lrj-header">
-        <h2>Louise <br> Rought <br> Jewellery </h2>
+      <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+        <h2>Louise Rought <br> Jewellery </h2>
       </div> 
 
-      <div class="in-dept-img-wrapper">
+      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
         <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
         </div>
       </div>
 
       <div class="in-dept-text">
         <div class="sub-header">
-          <h4>Tanker</h4>
+          <h4>velkommen</h4>
       </div>
 
-      <p>
-          Som smykkedesiger har jeg naturligvis ikke haft vanskeligt ved at lade mig fascinere af ædelmetallers
-          skønhed, mystik og formbarhed. 
-          <br>
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">Kære besøgende.
+        <br>
       </p>
 
-        <div class="sub-header">
-         <h4>Om formbarhed</h4>
-        </div>
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+         Velkommen til min nye hjemmeside. Jeg håber at du vil nyde
+         din tur rundt i min "butik" og min verden.
+         <br>
+         <br>
+      </p>
+      
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+         Og jeg håber især
+         at du får lyst til at komme ned og besøge mig i min butik.
+         <br>
+         <br>
+      </p>
 
-        <p>
-          At facineres af formbarhedens muligheder for
-          skabe smykker der etablerer kontakt mellem mennesker baseret på materialer
-          der er dannet for millioner af år tilbage i vores jords indre. 
-          <br>
-        </p>
-
-        <p>
-          Men vi lever i en tid hvor vi tvinges til at stille krav til hvordan vi
-          agerer i forhold til miljøet - også som smykkedesignere.
-          <br>
-        </p>
-
-        <div class="sub-header">
-            <h4>Om bæredygtighed</h4>
-        </div>
-
-        <p>
-          Bæredygtighed har heldigvis vundet indpas blandt smykkedesignere. Bevægelsen i retning
-          af stærkere bevidsthed om materialers tilblivelse og videredistribution er en vigtig, og
-          rigtig, bevægelse som vi er mange i branchen der hilser velkommen. 
-          <br>
-        </p>
-
-        <p>
-          For netop udvidning af ædelsten- og metaller er potentielt skadeligt for miljøet og 
-          for de mennesker der rundt omkring i verden udøver farligt og sundhedsskadeligt
-          arbejde.
-          <br>
-        </p>
-
-        <div class="in-dept-img-wrapper">
-            <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'" >
-            </div>
+      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
+          <div class="in-dept-img" style="height:20vh; background-size: cover" [style.background-image]="'url(' + galleryImages[1] + ')'">
           </div>
+      </div>
 
-        <p>
-          Jeg har truffet mit valg. Jeg arbejder kun med materialer der kan retfærdiggøres ud
-          fra et bæredygtighedsperspektiv.
-          <br>
-          <br> 
-        </p>
+      <div class="sub-header" [ngsReveal]="{ reset: false}">
+        <h4>mine kunder</h4>
+      </div>
 
-        <p>
-          Nogle materialer er certificeret, andre er ikke. Derfor er det afgørende for mig 
-          at kende mine leverandører under alle omstændigheder. 
-          <br>
-          <br> 
-        </p>
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+        Min verden er mest på Nørrebro. Det er i Ravnsborggade
+        jeg har min butik - Vaerkstedet. Mange af mine kunder er 
+        lokale eller mennesker der kommer forbi. 
+        <br>
+        <br>
+      </p>
 
-        <p>
-          Leverandører der tager i verden og inspicerer og præger de miljøer de opkøber i, i en bæredygtig retning.
-          <br>
-          <br> 
-        </p>
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+        For mig er kunden altid i centrum. Jeg laver unika og 
+        en stor del af min inspiration til kommende designs
+        kommer fra min daglige interaktion med mine kunder.
+        <br>
+        <br>
+     </p>
+
+      <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
+        <h4>mit værksted</h4>
+      </div>
+     
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+        Vaekstedet er etableret som en kombination af butik og 
+        værksted. Det er efterhånden en lille institution i Ryesgade, og 
+        vi har gjort meget for at skabe en både hyggelig, personlig og 
+        eksklusiv rammer omkring et hvert besøg.
+      <br>
+      <br>
+      </p>
+
+      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0}">
+          <div class="in-dept-img" style="height:20vh; background-size: cover; filter:grayscale(0%)" [style.background-image]="'url(' + galleryImages[2] + ')'">
+          </div>
+      </div>
+
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+        Nedenfor kan du læse om hvilke ting der optager mig i mit 
+        virker og hvordan jeg arbejder med materialer og etik, som 
+        for mig er et grundlæggende arbejdspræmis.
+        <br>
+        <br>
+     </p>
+
+     <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
+      <h4>temaer</h4>
+     </div>
+
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+      Hjemmesiden er delt op i forskellige sektioner:
+      <br>
+      <br>
+      </p>
+
+      <p [ngsReveal]="{ reset: false, delay: 1000, scale: 1.0}">
+        Perler
+        <br>
+      </p>
+
+      <p [ngsReveal]="{ reset: false, delay: 1200, scale: 1.0}">
+        Safirer
+        <br>
+      </p>
+
+      <p [ngsReveal]="{ reset: false, delay: 1400, scale: 1.0}">
+        Guld
+        <br>
+      </p>
+     
+      <p [ngsReveal]="{ reset: false, delay: 1600, scale: 1.0}">
+        Vaerkstedet
+        <br>
+        <br>
+      </p>
+      
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">I disse afsnit kan du læse mere om mine materialevalg
+        og se de enkelte smykker tæt hold.
+        <br>
+        <br>
+      </p>
+
+      <p [ngsReveal]="{ reset: false, scale: 1.0}">
+        Herudover har jeg etableret et selvstændig afsnit om bæredygtighed og 
+        den store betydning for mig i den måde jeg arbejder på 
+        som smykkedesigner. 
+        <br>
+        <br>
+      </p>
+
+      <p [ngsReveal]="{ reset: false,scale: 1.0}">
+        Jeg håber at både ord og billeder kan inspirere dig
+        og jeg håber fremfor alt at se dig i min butik på Nørrebro. 
+        <br>
+        <br>
+      </p>
 
       </div>
 
-      <div class="page-navbar">
-          <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 class="light">back to top</h4></a>
-          <a [routerLink]="['/pearls']"><h4>perler</h4></a>
+      <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
+          <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 >top</h4></a>
+          <a [routerLink]="['/sustainability']"><h4>n: sustainability</h4></a>
       </div>
 
 

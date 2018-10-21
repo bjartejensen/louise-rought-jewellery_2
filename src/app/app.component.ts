@@ -13,14 +13,28 @@ export class cdMegaMenu implements AfterViewInit, OnInit {
   showMegaMenu :boolean;
 
     constructor(){
-      console.log("Så kom vi så langt");
+      
      }
 
     ngOnInit(){
-      console.log("Så kom vi så langt");
+      
     }
 
-    ngAfterViewInit(){}
+    ngAfterViewInit() {
+
+      var animate = anime({
+        targets: 'div.menu a',
+        opacity: [
+          { value: 0, duration: 0 },
+          { value: 1, duration: 700 }
+        ],
+              
+        delay: function(el, i, l) {
+          return i * 100+300;
+        }
+      }); 
+      animate.play();
+    }
 
     @HostListener('click', ['$event']) onclick(event) {
 

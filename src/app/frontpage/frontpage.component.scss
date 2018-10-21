@@ -1,17 +1,8 @@
 @import '../../styles';
 
-*{
-    margin: 0;
-    padding: 0;
-
-  /*   &::before, &::after{
-        box-sizing: border-box;
-    } */
-}
-
 .scroll-indicator{
     position: absolute;
-    top:95%;
+    top:90%;
     left: -10%;
     //background: lightblue;
     width: fit-content;
@@ -34,24 +25,28 @@
     display: flex;
     //padding-top: 5%;
    // background: lightcoral;
-    padding-bottom: 0%;
+   // padding-bottom: 0%;
    // margin-top: 10%;
    // margin-bottom:0%;
 
     .in-dept-img{
         position: relative;
-        height: 60vh; 
+        height: 45vh; 
         width: 85vw;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position-y: center;
         background-position: center;
-       -webkit-filter: grayscale(100%); 
-        filter: grayscale(100%);   
+      /*  -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);    */
+        //animation: color-animation 1500ms ease-in; /* IE 10+, Fx 29+ */
+
         transform: scale(1.0); 
         //margin-bottom: 10%;
       }
 }
+
+
 
 .in-dept-text-section{
 
@@ -65,7 +60,16 @@
     margin-left:0; */
     width: 85vw;
     height: 100vh;
-    background: rgb(235, 228, 228);
+    margin-bottom: 10%;
+    background-color: $background-color;
+    //background: rgb(235, 228, 228);
+
+   /*  &::after{
+        content: "";
+        border-bottom: 5px solid red;
+        width: 100vw;
+    } */
+  
 
     .menu-item{
 
@@ -91,7 +95,7 @@
         margin: auto;
         margin-top: 10%;
         margin-bottom: 5%;  
-        background: lavender;
+       // background: lavender;
         
         h2{
         font-family: $text-font;
@@ -106,12 +110,10 @@
     
     .in-dept-text-local{
         position: relative;
-       /*  display: flex;
-        flex-direction: column;
-        align-content: flex-start; */
         width: 85vw;
-       // background: lawngreen;
-       margin-bottom: 5%;
+       
+      //  margin-bottom: 5%;
+       // background: orange;
 
        p{
         font-family: $text-font;
@@ -161,7 +163,7 @@
         //justify-content: space-around;
         //margin-bottom: 10%;
         width: fit-content;
-        background: lightgreen;
+      //  background: lightgreen;
     
         .navbar-item-wrapper{
            
@@ -208,29 +210,21 @@
 
 
 
-.description-section-wrapper{
+/* .description-section-wrapper{
     position: relative;
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 0%;
     height: fit-content;
-    
-    /* justify-content: center;
-    align-content: flex-start;
-    flex-wrap: wrap; */
     width: 85vw;
-    background: rgb(82, 5, 5);
 }
+ */
 
-.description-section-item{
+/* .description-section-item{
     position: relative;
     width: 85vw;
     height: 100vh;
-
-    &:nth-child(odd){
-        background: lightgray;
-    }
 
     .header{
         
@@ -274,7 +268,7 @@
                 background-size: contain;
                 background-position-y: center;
                 background-position: center;
-                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                -webkit-filter: grayscale(100%); 
                 filter: grayscale(100%);  
                 transition: opacity filter ease-in 300ms;
 
@@ -299,7 +293,6 @@
            }
 
            &::before{
-              // background: pink;
                transform: scale(0);
                border-top: 2px solid $text-color;
                border-bottom: 2px solid black;
@@ -313,25 +306,4 @@
                transform: scale(1);
            }
     }
-}
-
- /*  h2[data-tool-tip]{
-            position: relative;
-
-            &::after{
-              content: attr(data-tool-tip);
-              
-              display: block;
-              position: absolute;
-              background: gray;
-              transform: scale(0);
-              transition: transform ease-out 150ms;
-            }
-
-            &:hover::after{
-                transform: scale(1);
-
-            }
-
-        } */
-
+} */

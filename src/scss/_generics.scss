@@ -5,18 +5,18 @@
     padding: 0;
 }
 
+.row{
+    background-color: $background-color;
+}
+
 .in-dept-text-section{
 
     position: relative;
     margin: auto;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
-    /* margin-top: 0%;
-    margin-left:0; */
     width: 85vw;
-    height: fit-content;
-    background: rgb(129, 126, 126);
+    height:fit-content;
+    background: $background-color;
+    overflow-y: hidden;
 
     .menu-item{
 
@@ -45,12 +45,13 @@
         
         h2{
         font-family: $text-font;
-        font-size: 60px;
+        font-size: 8vmin;
         color: $header-color;
         text-align: center;
         overflow-wrap: break-word;
         letter-spacing: -1px;
         width: fit-content;
+      
     }
  }
 
@@ -71,7 +72,9 @@
         position: relative;
         width: 70vw;
         margin: auto;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        //background: lightcoral;
+       // background-color: $background-color;
                 
         p{
             font-family: $text-font;
@@ -88,8 +91,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 10%;
+        /* margin-bottom: 0%;
+        top: %; */
         width: 85vw;
+      //  background: lightgreen;
     
         .navbar-item-wrapper{
            
@@ -102,6 +107,8 @@
                 color: $text-color;
                 text-transform: lowercase;
                 font-size: 3.5vmin;
+
+               
             }
         }
 }

@@ -21,8 +21,9 @@ export class AboutComponent implements OnInit {
     this.galleryImages = new Array<string>();
 
     let imgPath= "../../assets/img/Compressed/";
-    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1189_cmp"+".jpg" );
-    this.galleryImages.push(imgPath + "stones.jpg");
+    this.galleryImages.push(imgPath + "Louise_portrait"+".jpg" );
+    this.galleryImages.push(imgPath + "v_4.jpeg");
+    this.galleryImages.push(imgPath + "v_3.jpeg");
   }
 
 }

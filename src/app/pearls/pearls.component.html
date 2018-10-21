@@ -6,90 +6,101 @@
         <a><h4>menu</h4></a>
       </div>
 
-      <div class="page-navbar">
-          <a [routerLink]="['/frontpage']"><h4 class="light">til oversigt</h4></a>
+      <div class="page-navbar"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+          <a [routerLink]="['/frontpage']"><h4 class="light">overview</h4></a>
       </div>
 
-      <div class="header lrj-header">
-        <h2>Om Perler</h2>
+      <div class="header lrj-header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+        <h2>Pearls</h2>
       </div>  
   
-      <div class="in-dept-img-wrapper">
-          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'">
+      <div class="in-dept-img-wrapper"  [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0}">
+          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
           </div>
       </div>
   
       <div class="in-dept-text">
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
             <h4>Om perler</h4>
           </div>
   
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Jeg elsker at arbejde med perler. 
               Perler er for mig indbegrebet af naturlig skønhed.
-              Det komplekse farvespil, den frakturede struktur
+             
+            <br>
+            <br>
+          </p>
+
+          <p [ngsReveal]="{ reset: false, scale: 1.0}"> 
+            Det komplekse farvespil, den frakturede struktur
               der på en gang minder én om livet skøbelighed og
               naturens styrke og ufattelige skønhed. 
-            <br>
+          <br>
+          <br>  
           </p>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Perler er for mig en kilde til dybt inspiration.
             <br>
+            <br>
           </p>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>Perler og miljø</h4>
           </div>
   
-           <p>
+           <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Perler er materialer skabt i levende væsener, og derfor har vi naturligvis
               en ekstra forpligtelse i forhold at passe på naturen i udvindelsesprocessen.
             <br>
+            <br>
           </p>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>Marc' Haritt</h4>
           </div>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Jeg bruger perler fra Marc' Haritt.
               Marc’Harit har specialiseret sig indenfor de fine saltvandskulturperler South Sea- og Tahiti kulturperler.
             <br>
+            <br>
           </p>
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Hos Marc’Harit arbejder de kun med den bedste kvalitet inden for kulturperler, 
               og langt størstedelen af Deres perler er dyrket under bæredygtige og Fair-Trade forhold. 
+              <br>
               <br>
           </p>
          
   
-          <div class="in-dept-img-wrapper">
+          <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
               <div class="in-dept-img" style='filter:grayscale(100%)' [style.background-image]="'url(' + galleryImages[0] + ')'" >
               </div>
           </div>
 
-          <div class="sub-header">
+          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>På besøg</h4>
           </div>
 
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
             De besøger regelmæssigt deres samarbejdspartnere på deres perlefarme i Fransk Polynesien, på Filippinerne, Indonesien, og Mexico. 
             <br>
+            <br>
           </p>
-          <p>
+          <p [ngsReveal]="{ reset: false, scale: 1.0}">
             Netop ved at besøge sine leverandører  skabes den bedste dialog og involvering med producenterne
             således at de tilsikres at perledyrkningen foregår i overensstemmelse med bæredygtighedsprincipper.
-            <br>
           </p>
           
 
       </div>
 
-      <div class="page-navbar">
-            <a [routerLink]="['/about']"><h4>Om louise</h4></a>
-            <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 class="light">back to top</h4></a>
-            <a [routerLink]="['/sapphires']"><h4>Safirer</h4></a>
+      <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <a [routerLink]="['/sustainability']"><h4>p: sustainability</h4></a>
+            <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 class="light">top</h4></a>
+            <a [routerLink]="['/sapphires']"><h4>n: Safirer</h4></a>
       </div>
       
       </div>

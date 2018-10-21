@@ -1,16 +1,21 @@
 @import '../../styles';
 
+.in-dept-text-section{
+    //background: rgb(69, 85, 69);
+
+}
+
 .in-dept-img-wrapper{
 
     .in-dept-img{
         position: relative;
-        height: 50vh; 
+        height: 30vh; 
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: center;
         background-position: center;
-        /* -webkit-filter: grayscale(100%); 
-        filter: grayscale(100%);   */
+        -webkit-filter: grayscale(0%); 
+        filter: grayscale(0%);   
         transform: scale(1.0); 
         margin-bottom: 10%;
       }

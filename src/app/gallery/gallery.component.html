@@ -1,142 +1,187 @@
-
 <div class="container-fluid">
-
-    <div class="row" id="section-top" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '700px', origin:'top'}">
-
+    <div id="section-j1" class="row" id="section-top">
       
-      
-      <a [routerLink]="['/', 'gallery', 'j1']" >
-        <div class="in-dept-image-section">
+      <div class="in-dept-image-section">
     
-        <div class="page-navbar" style="top: 5%">
-          <a [routerLink]="['/']"><h4>overview</h4></a>
+        <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+          <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
         </div>
 
-        <div class="header lrj-header">
+        <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
            <h2>Fresh Water Drop</h2>
         </div> 
-
         
-
-          <div class="in-dept-img-wrapper">
+        <a [routerLink]="['/', 'gallery', 'j1']" >
+          <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
             <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
             </div>
           </div>
+        </a>
     
-          <div class="in-dept-text">
-          </div>
+        <div class="in-dept-text"></div>
+      
+        <div class="scroll-indicator" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+            <a pageScroll [pageScrollDuration]="700"  href="#section-j2">
+              <h4 >next section</h4>
+            </a>
         </div>
-      </a>
-    
+      </div>
     </div>
 
-    <div class="row">
-        <a [routerLink]="['/', 'gallery', 'j2']" >
-         <div class="in-dept-text-section">
+    <div id="section-j2" class="row">
+        
+         <div class="in-dept-image-section">
+
+            <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+                <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
+              </div>
      
-           <div class="header lrj-header">
+           <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
                <h2>Pearl Necklesses</h2>
            </div> 
    
-           <div class="in-dept-img-wrapper">
+           <a [routerLink]="['/', 'gallery', 'j2']" >
+           <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'">
              </div>
            </div>
-     
+          </a>
            <div class="in-dept-text">
-           
            </div>
-         </div>
-        </a>
-    </div>
 
-    <div class="row">
-        <a [routerLink]="['/', 'gallery', 'j3']" >
-         <div class="in-dept-text-section">
+           <div class="scroll-indicator" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+              <a pageScroll [pageScrollDuration]="700"  href="#section-j3">
+                <h4 class="light">next section</h4>
+              </a>
+          </div>
+
+         </div>
+        
+
+        
+    
+      </div>
+
+    <div id="section-j3" class="row">
+        
+         <div class="in-dept-image-section">
+
+            <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+                <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
+              </div>
      
-           <div class="header lrj-header">
+           <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
                <h2>Big Oops</h2>
            </div> 
-   
-           <div class="in-dept-img-wrapper">
+           <a [routerLink]="['/', 'gallery', 'j3']" >
+           <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[2] + ')'">
              </div>
            </div>
-     
+          </a>
+
            <div class="in-dept-text">
-          
            </div>
-         </div>
-        </a>
+
+           <div class="scroll-indicator" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+              <a pageScroll [pageScrollDuration]="700"  href="#section-j4">
+                <h4 class="light">next section</h4>
+              </a>
+          </div>
+      </div>
     </div>
 
-    <div class="row">
-        <a [routerLink]="['/', 'gallery', 'j4']" >
-         <div class="in-dept-text-section">
+    <div id="section-j4" class="row">
+        
+         <div class="in-dept-image-section">
+
+            <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+                <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
+              </div>
      
-           <div class="header lrj-header">
+           <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
                <h2>Tahiti Love</h2>
            </div> 
-   
-           <div class="in-dept-img-wrapper">
+           <a [routerLink]="['/', 'gallery', 'j4']" >
+           <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[3] + ')'">
              </div>
            </div>
+           </a>
      
            <div class="in-dept-text">
-          
            </div>
+
+           <div class="scroll-indicator" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+              <a pageScroll [pageScrollDuration]="700"  href="#section-j5">
+                <h4 class="light">next section</h4>
+              </a>
+          </div>
+
          </div>
-        </a>
+        
     </div>
 
-    <div class="row">
-        <a [routerLink]="['/', 'gallery', 'j5']" >
-         <div class="in-dept-text-section">
+    <div id="section-j5" class="row">
+        
+         <div class="in-dept-image-section">
+
+            <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+                <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
+              </div>
      
-           <div class="header lrj-header">
+           <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
                <h2>Tahiti Stick</h2>
            </div> 
    
+           <a [routerLink]="['/', 'gallery', 'j5']" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
            <div class="in-dept-img-wrapper">
              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[4] + ')'">
              </div>
            </div>
+          </a>
      
            <div class="in-dept-text">
-          
            </div>
+
+           <div class="scroll-indicator" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+              <a pageScroll [pageScrollDuration]="700"  href="#section-j6">
+                <h4 class="light">next section</h4>
+              </a>
+          </div>
+
          </div>
-        </a>
+        
+
+        
     </div>
 
-    <div class="row">
-        <a [routerLink]="['/', 'gallery', 'j6']" >
-         <div class="in-dept-text-section">
+    <div id="section-j6" class="row">
+        
+         <div class="in-dept-image-section">
+
+            <div class="page-navbar" style="top: 5%" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+                <a><h4 style="text-align:center" > Louise Rought Jewellery <br> Fall 2018</h4></a>
+              </div>
      
-           <div class="header lrj-header">
-               <h2>Fresh Water Drop</h2>
+           <div class="header" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+               <h2>The Stones</h2>
            </div> 
-   
-           <div class="in-dept-img-wrapper">
+           <a [routerLink]="['/', 'gallery', 'j6']" >
+           <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0 }">
              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[5] + ')'">
              </div>
            </div>
+           </a>
      
            <div class="in-dept-text">
-            
            </div>
+
+           <div class="page-navbar" [ngsReveal]="{ duration: 300, delay:500,scale: 1.0 }">
+              <a pageScroll [pageScrollDuration]="700"  href="#section-top">
+                <h4 class="light">top</h4>
+              </a>
+            </div>
          </div>
-        </a>
     </div>
-        
-    <div class="in-dept-text-section">
-      <div class="page-navbar">
-        <a pageScroll [pageScrollDuration]="700"  href="#section-top">
-          <h4 class="light">back to top</h4>
-        </a>
-      </div>
-    </div>
-
-
   </div>

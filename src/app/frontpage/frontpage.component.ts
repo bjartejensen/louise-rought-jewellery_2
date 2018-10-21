@@ -55,6 +55,7 @@ export class FrontpageComponent implements OnInit {
     this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1463_cmp"+".jpg");
     this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1360_cmp"+".jpg");
     this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1330_cmp"+".jpg");
+    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1358_cmp"+".jpg");
 
 
   }

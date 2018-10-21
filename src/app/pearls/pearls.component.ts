@@ -28,7 +28,7 @@ export class PearlsComponent implements OnInit {
 
     let imgPath= "../../assets/img/Compressed/";
     this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1189_cmp"+".jpg" );
-    this.galleryImages.push(imgPath + "stones.jpg");
+    this.galleryImages.push(imgPath + "v_4.jpg");
   }
 
 }

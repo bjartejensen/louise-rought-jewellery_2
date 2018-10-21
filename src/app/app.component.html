@@ -2,7 +2,7 @@
 <header>
 <div class="side-navbar-right">
     <div class="navbar-item">
-       <a  (click)="toggleMegaMenu($event)">{{ showMegaMenu == false ? 'menu' : 'close' }}</a> 
+       <a (click)="toggleMegaMenu()">{{ showMegaMenu == false ? 'menu' : 'close' }}</a> 
        
     </div> 
 </div>
@@ -24,11 +24,11 @@
       <a (click)="toggleMegaMenu($event)"><h4>Close</h4></a>
 </div>
   
-  <div class="menu" >
+  <div *ngIf="showMegaMenu" class="menu" appMegaMenu >
             <ul>
                 <a id="home" (click)="toggleMegaMenu($event)" [routerLink]="['/frontpage']" >Home</a>
                 <a id="gallery"  (click)="toggleMegaMenu($event)"  [routerLink]="['/gallery']" >Gallery</a>
-                <a id="contact" (click)="toggleMegaMenu($event)"  [routerLink]="['/contact']">Contact</a>
+               <!--  <a id="contact" (click)="toggleMegaMenu($event)"  [routerLink]="['/contact']">Contact</a> -->
                 <a id="find" (click)="toggleMegaMenu($event)"   [routerLink]="['/find']">Find</a>
             </ul>
           </div> 
