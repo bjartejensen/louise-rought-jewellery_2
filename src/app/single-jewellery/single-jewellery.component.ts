@@ -50,7 +50,7 @@ export class SingleJewelleryComponent implements OnInit, AfterViewInit {
         { value: 1, duration: 0 },
         { value: 0, duration: 800 }
       ],   */
-      width: '100vw',
+      width: '85vw',
       easing: 'easeInOutQuad',
       duration: 300,
       delay: 100,

@@ -2,7 +2,7 @@
   <div class="row">
                 
     <div class="in-dept-text-section">
-       <div class="header lrj-header" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0,origin: 'top',distance: '200px' }">
+       <div class="header" [ngsReveal]="{ duration: 500, delay:800,scale: 1.0,origin: 'top',distance: '200px' }">
           <h2>{{selectedGalleryItem.name}}</h2>
        </div> 
 
@@ -20,7 +20,7 @@
        </div>
 
        <div class="page-navbar" [ngsReveal]="{ duration: 900, delay:200,scale: 1.0, origin: 'top',distance: '50px' }">
-          <a [routerLink]="['/gallery']"><h4>Gallery</h4></a> 
+          <a [routerLink]="['/gallery']"><h4> back to Gallery</h4></a> 
        </div>
     </div>
   </div>

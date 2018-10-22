@@ -3,7 +3,7 @@
       <div class="in-dept-text-section" >
        
       <div class="page-navbar" Style="top:5%"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}" >
-          <a [routerLink]="['/frontpage']"><h4>overview</h4></a>
+          <a [routerLink]="['/frontpage']"><h4>back to front page</h4></a>
       </div>
 
       <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
@@ -39,10 +39,6 @@
             <br>
           </p>
 
-          <div class="in-dept-img-wrapper">
-              <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[1] + ')'">
-              </div>
-          </div>
   
           <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>Om fællesskab</h4>
@@ -62,17 +58,22 @@
           <p [ngsReveal]="{ reset: false, scale: 1.0}">
            Hvis du kigger efter håndlavede smykker 
            i bæredygtige materialer, så kig ned på Vaerkstedet.
+           <br>
+           <br>
           </p>
 
           <p [ngsReveal]="{ reset: false, scale: 1.0}">
             Hvis du ikke finder det du lige søger, så kom ned til mig og få en
             snak.
-             </p>
+            <br>
+            <br>
+            
+          </p>
   
         </div>
 
-        <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
-            <a [routerLink]="['/metals']"><h4>p: guld</h4></a>
+        <div class="page-navbar" style="margin-bottom:10%" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <a [routerLink]="['/metals']"><h4>p:gol</h4></a>
             <a pageScroll [pageScrollDuration]="700"  href="#top-section" ><h4 class="light">top</h4></a>
             
         </div>

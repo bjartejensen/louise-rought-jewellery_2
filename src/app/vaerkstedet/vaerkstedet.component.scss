@@ -1,22 +1,104 @@
 @import '../../styles';
 
 .in-dept-text-section{
-    //background: rgb(69, 85, 69);
 
-}
+    .page-navbar{
 
-.in-dept-img-wrapper{
+        justify-content: space-between;
+        &:nth-child(1){
+          justify-content: center;
+        }
+    
+        @media(min-width: 768px){
+            margin-top: -5%;
+            a{
+                h4{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .header{
+    
+        @media(min-width:768px){
+            top: -10%;
+        }
 
-    .in-dept-img{
+        h2{
+            
+            @media(min-width: 768px){
+                font-size: 6rem;
+               // background: ivory;
+
+            }
+        }
+    }
+
+
+    .sub-header{
+        @media(min-width: 768px){
+            //margin-top: -10%;
+           // background: orange
+        }
+    }
+
+    .in-dept-img-wrapper{
+
         position: relative;
-        height: 30vh; 
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: center;
-        background-position: center;
-        -webkit-filter: grayscale(0%); 
-        filter: grayscale(0%);   
-        transform: scale(1.0); 
+        display: flex;
+        margin-top: 10%;
         margin-bottom: 10%;
-      }
+    
+        .in-dept-img{
+            position: relative;
+            height: 55vh; 
+            width: 100vw;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: center;
+            background-position: center;
+            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);  
+            transform: scale(1.0); 
+            margin-bottom: 10%;
+    
+            @media(min-width: 768px){
+                background-size: contain;
+                width: 80vw;
+                height: 40vh;
+                margin-bottom: -55%;
+                margin-top: 0%;
+    
+                &:nth-child(1){
+                    margin-top: -30%;
+                    margin-bottom: -5%;
+                    height: 55vh;
+                }
+    
+            }
+          }
+    }
+
+    .in-dept-text{
+        position: relative;
+
+        @media(min-width: 768px){
+          /*   background: lightblue;
+            margin-top: -10%; */
+        }
+
+        p{
+            @media(min-width: 768px){
+                font-size: 4.5vmin;
+            }
+        }
+    }
+
 }
+
+
+
+
+

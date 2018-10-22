@@ -2,19 +2,15 @@
     <div id="top-section" class="row">
       <div class="in-dept-text-section">
 
-      <div class="menu-item">
-        <a><h4>menu</h4></a>
-      </div>
-
       <div class="page-navbar"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
-          <a [routerLink]="['/frontpage']"><h4 class="light">overview</h4></a>
+          <a [routerLink]="['/frontpage']"><h4 class="light">back to front page</h4></a>
       </div>
 
-      <div class="header lrj-header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+      <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
         <h2>Pearls</h2>
       </div>  
   
-      <div class="in-dept-img-wrapper"  [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0}">
+      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
           <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
           </div>
       </div>
@@ -75,10 +71,10 @@
           </p>
          
   
-          <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
+         <!--  <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
               <div class="in-dept-img" style='filter:grayscale(100%)' [style.background-image]="'url(' + galleryImages[0] + ')'" >
               </div>
-          </div>
+          </div> -->
 
           <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
               <h4>På besøg</h4>
@@ -97,10 +93,10 @@
 
       </div>
 
-      <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
-            <a [routerLink]="['/sustainability']"><h4>p: sustainability</h4></a>
-            <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 class="light">top</h4></a>
-            <a [routerLink]="['/sapphires']"><h4>n: Safirer</h4></a>
+      <div class="page-navbar" style="margin-bottom:10%" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <a [routerLink]="['/sustainability']"><h4>p:sus</h4></a>
+            <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4>top</h4></a>
+            <a [routerLink]="['/sapphires']"><h4>n:Saf</h4></a>
       </div>
       
       </div>

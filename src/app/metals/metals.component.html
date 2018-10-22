@@ -2,12 +2,8 @@
     <div id="top-section" class="row">
       <div class="in-dept-text-section">
 
-      <div class="menu-item">
-        <a><h4>menu</h4></a>
-      </div>
-
       <div class="page-navbar"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
-          <a [routerLink]="['/frontpage']"><h4 class="light">overview</h4></a>
+          <a [routerLink]="['/frontpage']"><h4 class="light">back to front page</h4></a>
       </div>
     
       <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
@@ -34,8 +30,7 @@
 
           <p [ngsReveal]="{ reset: false, scale: 1.0}">
               De guldsmykker, du køber hos os, er derfor produceret af genbrugsguld.
-            <br>
-            Såkaldt re-cirkuleret guld.
+              Såkaldt re-cirkuleret guld.
             <br>
             <br>
           </p>
@@ -46,7 +41,12 @@
   
            <p [ngsReveal]="{ reset: false, scale: 1.0}">
               Guld er måske det materiale, der gennem tiden er blevet genbrugt flest gange pga. værdien. 
-               Særligt i perioder med krise er mange smykker blevet solgt og sendt til affinering, hvilket vil sige, at det renses og ender som rent guld, hvorefter det sendes tilbage i kredsløbet, så nye smykker kan se dagens lys. 
+            <br>
+            <br>
+          </p>
+
+          <p>
+            Særligt i perioder med krise er mange smykker blevet solgt og sendt til affinering, hvilket vil sige, at det renses og ender som rent guld, hvorefter det sendes tilbage i kredsløbet, så nye smykker kan se dagens lys. 
             <br>
             <br>
           </p>
@@ -67,35 +67,13 @@
             <br>
             <br>
           </p>
-         
-  
-          <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
-              <div class="in-dept-img"  [style.background-image]="'url(' + galleryImages[1] + ')'" >
-              </div>
-          </div>
 
-          <div class="sub-header" [ngsReveal]="{ reset: false, scale: 1.0}">
-              <h4>På besøg</h4>
-          </div>
+        </div>
 
-          <p [ngsReveal]="{ reset: false, scale: 1.0}">
-            De besøger regelmæssigt deres samarbejdspartnere på deres perlefarme i Fransk Polynesien, på Filippinerne, Indonesien, og Mexico. 
-            <br>
-            <br>
-          </p>
-          <p [ngsReveal]="{ reset: false, scale: 1.0}">
-            Netop ved at besøge sine leverandører  skabes den bedste dialog og involvering med producenterne
-            således at de tilsikres at perledyrkningen foregår i overensstemmelse med bæredygtighedsprincipper.
-            <br>
-          </p>
-          
-
-      </div>
-
-      <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
-            <a [routerLink]="['/sapphires']"><h4>p: safirer</h4></a>
+      <div class="page-navbar" style="margin-bottom:10%" [ngsReveal]="{ reset: false, scale: 1.0}">
+            <a [routerLink]="['/sapphires']"><h4>p:saf</h4></a>
             <a pageScroll [pageScrollDuration]="700"  href="#top-section" > <h4 class="light">top</h4></a>
-            <a [routerLink]="['/vaerkstedet']"><h4>n: vaerkstedet</h4></a>
+            <a [routerLink]="['/vaerkstedet']"><h4>n:vae</h4></a>
       </div>
       
       </div>
