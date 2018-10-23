@@ -15,13 +15,16 @@ export class MetalsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
   setImageArray(){
-    
-    this.galleryImages = new Array<string>();
 
-    let imgPath= "../../assets/img/Compressed/";
-    this.galleryImages.push(imgPath + "180826_LOUISE_ROUGHT1189_cmp"+".jpg" );
-    this.galleryImages.push(imgPath + "stones.jpg");
+  this.galleryImages = new Array<string>();
+
+  let imgPath= "../../assets/img/Compressed/";
+  this.galleryImages.push(imgPath + "v_4"+".jpeg" );
+  this.galleryImages.push(imgPath + "sust_3.jpeg" );
+  this.galleryImages.push(imgPath + "v_3.jpeg");
+  this.galleryImages.push(imgPath + "v_2.jpeg");
   }
+
 }

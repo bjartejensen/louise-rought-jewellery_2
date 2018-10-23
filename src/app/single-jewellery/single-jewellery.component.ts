@@ -32,6 +32,7 @@ export class SingleJewelleryComponent implements OnInit, AfterViewInit {
 
   animateIntro1:any;
   animateIntro2:any;
+  animateIntro3:any;
 
   constructor(private route: ActivatedRoute) {}
   
@@ -51,9 +52,10 @@ export class SingleJewelleryComponent implements OnInit, AfterViewInit {
         { value: 0, duration: 800 }
       ],   */
       width: '85vw',
+           
       easing: 'easeInOutQuad',
-      duration: 300,
-      delay: 100,
+      duration: 600,
+      delay: 400,
     }); 
 
     this.animateIntro2 = anime({
@@ -64,12 +66,21 @@ export class SingleJewelleryComponent implements OnInit, AfterViewInit {
       ],  
       easing: 'easeInOutQuad',
       duration: 300,
-      delay: 300,
+      delay: 1000,
+    }); 
+
+    this.animateIntro2 = anime({
+      targets: 'div.border',
+       opacity: 0,
+      easing: 'easeInOutQuad',
+      duration: 300,
+      delay: 3000,
     }); 
     
 
     this.animateIntro1.play();
     this.animateIntro2.play();
+    this.animateIntro3.play();
 
   }
 

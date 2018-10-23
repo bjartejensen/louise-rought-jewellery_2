@@ -2,15 +2,42 @@
 
 .in-dept-text-section{
 
-    .page-navbar{
+    position: relative;
+    margin: auto;
+    width: 85vw;
+    height:fit-content;
+    background: $background-color;
 
+    .page-navbar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
         justify-content: space-between;
+        width: 100%;
+        
         &:nth-child(1){
           justify-content: center;
+          top: 5%;
+         // background: orange;
         }
-    
+
+        &:nth-child(3){
+           bottom: 5%;
+           justify-content: space-between;
+        }
+
+        a{
+            h4{
+                font-family: $menu-font;
+                color: $text-color;
+                text-transform: lowercase;
+                font-size: 3.5vmin;
+            }
+        }
+
         @media(min-width: 768px){
-            margin-top: -5%;
+            
             a{
                 h4{
                     font-size: 1.5rem;
@@ -18,84 +45,81 @@
             }
         }
     }
+
+
+    .menu-item{
+        position: relative; 
+        right:5%;
+        margin-top: 10%;
+        transform: rotate(90deg);
+
+        a{
+            h4{
+                font-family: $menu-font;
+                color: $text-color;
+                text-transform: lowercase;
+                font-size: 3.5vmin;
+            }
+        }
+    }
     
     .header{
-    
-        @media(min-width:768px){
-            top: -10%;
-        }
-
-        h2{
-            
-            @media(min-width: 768px){
-                font-size: 6rem;
-               // background: ivory;
-
-            }
-        }
-    }
-
-
-    .sub-header{
-        @media(min-width: 768px){
-            //margin-top: -10%;
-           // background: orange
-        }
-    }
-
-    .in-dept-img-wrapper{
-
         position: relative;
         display: flex;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    
-        .in-dept-img{
-            position: relative;
-            height: 55vh; 
-            width: 100vw;
-            margin: auto;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position-y: center;
-            background-position: center;
-            -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(0%);  
-            transform: scale(1.0); 
-            margin-bottom: 10%;
-    
-            @media(min-width: 768px){
-                background-size: contain;
-                width: 80vw;
-                height: 40vh;
-                margin-bottom: -55%;
-                margin-top: 0%;
-    
-                &:nth-child(1){
-                    margin-top: -30%;
-                    margin-bottom: -5%;
-                    height: 55vh;
-                }
-    
+        justify-content: center;
+        margin: auto;
+        margin-top: 25%;
+        margin-bottom: 17%;  
+        
+        h2{
+        font-family: $text-font;
+        font-size: 8vmin;
+        color: $header-color;
+        text-align: center;
+        overflow-wrap: break-word;
+        letter-spacing: -1px;
+        width: fit-content;
+      
+    }
+ }
+
+    .sub-header{
+        position: relative;
+        margin-bottom: 5%;
+        margin-top: 5%;
+
+        &:nth-child(1){
+            margin-top: 50%;
+            h4{
+                font-size: 6vmin;
             }
-          }
+        }
+       
+        h4{
+            font-family: $menu-font;
+            color: $text-color;
+            text-transform: lowercase;
+            font-size: 4vmin;
+        }
     }
 
     .in-dept-text{
         position: relative;
-
-        @media(min-width: 768px){
-          /*   background: lightblue;
-            margin-top: -10%; */
-        }
-
+        width: 70vw;
+        max-width: 1400px;
+        height: fit-content;
+        margin: auto;
+        margin-bottom: 5%;
+                       
         p{
-            @media(min-width: 768px){
-                font-size: 4.5vmin;
-            }
+            font-family: $menu-font; //$text-font;
+            text-align: left;
+            font-size: 4vmin;
+            font-weight: 200;//600;
+            letter-spacing: 0px;
+            overflow-wrap:break-word;
         }
     }
-
 }
 
 

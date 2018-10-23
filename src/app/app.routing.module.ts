@@ -7,6 +7,8 @@ import { PearlsComponent } from './pearls/pearls.component';
 import {SapphiresComponent} from './sapphires/sapphires.component';
 import { FindComponent } from './find/find.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import {GalleryNewComponent} from './gallery-new/gallery-new.component';
+import {GalleryNew2Component} from './gallery-new2/gallery-new2.component';
 import {FrontpageComponent} from './frontpage/frontpage.component';
 import { FrontpageNewComponent } from './frontpage-new/frontpage-new.component';
 import {MetalsComponent} from './metals/metals.component';
@@ -16,7 +18,7 @@ import {SustanabilityComponent} from './sustanability/sustanability.component';
 const routes: Routes=[
     {path:"",component: FrontpageNewComponent},
     {path:"about",component: AboutComponent},
-    {path:"gallery",component: GalleryComponent},
+    {path:"gallery",component: GalleryNewComponent},
     {path:"gallery/:id",component:SingleJewelleryComponent,pathMatch: 'full'},
     {path:"pearls",component: PearlsComponent},
     {path: "sapphires",component: SapphiresComponent},

@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    //background: $background-color;
 }
 
 .row{
@@ -16,7 +17,9 @@
     width: 85vw;
     height:fit-content;
     background: $background-color;
-    overflow-y: hidden;
+    //overflow-y: visible;
+    /* height: auto;
+    min-height: 100% !important; */
 
     .menu-item{
 
@@ -71,6 +74,7 @@
     .in-dept-text{
         position: relative;
         width: 70vw;
+        height: fit-content;
         margin: auto;
         margin-bottom: 5%;
         //background: lightcoral;

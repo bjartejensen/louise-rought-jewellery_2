@@ -1,24 +1,24 @@
 <div class="container-fluid">
-    <div id="top-section" class="row">
+    <div class="row">
       <div class="in-dept-text-section" >
        
-      <div class="page-navbar" Style="top:5%"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}" >
+      <div class="page-navbar" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}" >
           <a [routerLink]="['/frontpage']"><h4>back to front page</h4></a>
       </div>
 
-      <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+    <!--  <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
           <h2> Vaerkstedet </h2>
-      </div> 
+      </div> -->
 
-      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
-          <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
+    <!--  <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
+          <div class="in-dept-img-head" [style.background-image]="'url(' + galleryImages[0] + ')'">
           </div>
-        </div>
+        </div> -->
         
         <div class="in-dept-text">
           
           <div class="sub-header"  [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 }">
-            <h4>Om Vaerkstedet</h4>
+            <h4>Vaerkstedet</h4>
           </div>
   
           <p [ngsReveal]="{ reset: false, scale: 1.0}">
@@ -34,7 +34,7 @@
           </p>
   
            <p [ngsReveal]="{ reset: false, scale: 1.0}">
-            Værkstedets spiller en central rolle i butikken og tilfører en hyggelig, autentisk og arbejdsom atmosfærer. 
+            Værkstedets spiller en central rolle i butikken og tilfører en hyggelig, autentisk og arbejdsom atmosfære. 
             <br>
             <br>
           </p>
@@ -50,10 +50,10 @@
             <br>
           </p>
   
-          <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
+         <!-- <div class="in-dept-img-wrapper" [ngsReveal]="{ reset: false, scale: 1.0}">
               <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[2] + ')'" >
               </div>
-          </div>
+          </div> -->
 
           <p [ngsReveal]="{ reset: false, scale: 1.0}">
            Hvis du kigger efter håndlavede smykker 
@@ -72,7 +72,7 @@
   
         </div>
 
-        <div class="page-navbar" style="margin-bottom:10%" [ngsReveal]="{ reset: false, scale: 1.0}">
+        <div class="page-navbar" [ngsReveal]="{ reset: false, scale: 1.0}">
             <a [routerLink]="['/metals']"><h4>p:gol</h4></a>
             <a pageScroll [pageScrollDuration]="700"  href="#top-section" ><h4 class="light">top</h4></a>
             

@@ -67,18 +67,20 @@
 
             a{
                 position: relative;
-                color: black;
-                font-weight: 700;
+                color: $text-color;
+                font-weight: 100;
                 text-decoration: none;
-                font-family: $text-font;
-                font-size:3rem;
+                font-family: $novar-font;
+                font-size:2rem;
+                letter-spacing: -1px;
                 display: block;
                 opacity: 0;
                 transition: all ease-in 0.25s;
+                text-transform: uppercase;
               //  background: lightcoral;
 
                 @media(min-width: 768px){
-                    font-size:4.5rem;
+                    font-size:5rem;
              //       background: lawngreen;
                 }
                                                   

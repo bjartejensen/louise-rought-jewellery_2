@@ -2,23 +2,23 @@
   <div id="top-section" class="row">
     <div class="in-dept-text-section">
 
-      <div class="page-navbar" style="top:5%"  [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
+      <div class="page-navbar" [ngsReveal]="{delay: 600, scale:1.0, origin: 'top', distance: '25px'}">
           <a [routerLink]="['/frontpage']" ><h4>back to front page</h4></a>
       </div> 
 
-      <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
+    <!--  <div class="header" [ngsReveal]="{ duration: 500, delay:200,scale: 1.0 , opacity: 0 , distance: '50px', origin:'top'}">
         <h2>Louise Rought <br> Jewellery </h2>
-      </div> 
+      </div> -->
 
-      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
+    <!--  <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
         <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[0] + ')'">
         </div>
-      </div>
+      </div> -->
 
       <div class="in-dept-text">
 
           <div class="sub-header">
-            <h4>velkommen</h4>
+            <h4>Louise rought Jewellery</h4>
           </div>
 
       <p [ngsReveal]="{ reset: false, scale: 1.0}">Kære besøgende.
@@ -40,10 +40,10 @@
          <br>
       </p>
 
-      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
+    <!--  <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0 }">
           <div class="in-dept-img"  [style.background-image]="'url(' + galleryImages[1] + ')'">
           </div>
-      </div>
+      </div> -->
 
       <div class="sub-header" [ngsReveal]="{ reset: false}">
         <h4>mine kunder</h4>
@@ -78,10 +78,10 @@
       <br>
       </p>
 
-      <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0}">
+    <!--  <div class="in-dept-img-wrapper" [ngsReveal]="{ duration: 500, delay:300,scale: 1.0 , opacity: 0}">
           <div class="in-dept-img" [style.background-image]="'url(' + galleryImages[2] + ')'">
           </div>
-      </div>
+      </div> -->
 
       <p [ngsReveal]="{ reset: false, scale: 1.0}">
         Nedenfor kan du læse om hvilke ting der optager mig i mit 
@@ -145,7 +145,7 @@
 
       </div>
 
-      <div class="page-navbar" style="margin-bottom:10%" [ngsReveal]="{ reset: false, scale: 1.0}">
+      <div class="page-navbar" >
           <a pageScroll [pageScrollDuration]="700"  href="#top-section"><h4 >top</h4></a>
           <a [routerLink]="['/sustainability']"><h4>n:sus</h4></a>
       </div>

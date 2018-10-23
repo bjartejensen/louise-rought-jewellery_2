@@ -20,6 +20,10 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 import { MetalsComponent } from './metals/metals.component';
 import { SustanabilityComponent } from './sustanability/sustanability.component';
 import { FrontpageNewComponent,cdFpSectionOuttro } from './frontpage-new/frontpage-new.component';
+import { GalleryNewComponent } from './gallery-new/gallery-new.component';
+import { GalleryNew2Component } from './gallery-new2/gallery-new2.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCard,MatCardHeader,MatCardTitle, MatCardSubtitle, MatCardContent,MatCardImage} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -38,13 +42,16 @@ import { FrontpageNewComponent,cdFpSectionOuttro } from './frontpage-new/frontpa
     MetalsComponent,
     SustanabilityComponent,
     FrontpageNewComponent,
-    cdFpSectionOuttro
+    cdFpSectionOuttro,
+    GalleryNewComponent,
+    GalleryNew2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollModule,
-    NgsRevealModule.forRoot()
+    NgsRevealModule.forRoot(),
+    BrowserAnimationsModule
     
     
   ],
