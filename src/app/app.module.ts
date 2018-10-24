@@ -24,6 +24,7 @@ import { GalleryNewComponent } from './gallery-new/gallery-new.component';
 import { GalleryNew2Component } from './gallery-new2/gallery-new2.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCard,MatCardHeader,MatCardTitle, MatCardSubtitle, MatCardContent,MatCardImage} from '@angular/material';
+import { MegaMenuComponent,cdMegaMenu2 } from './mega-menu/mega-menu.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import {MatCard,MatCardHeader,MatCardTitle, MatCardSubtitle, MatCardContent,MatC
     FrontpageNewComponent,
     cdFpSectionOuttro,
     GalleryNewComponent,
-    GalleryNew2Component
+    GalleryNew2Component,
+    MegaMenuComponent,
+    cdMegaMenu2
   ],
   imports: [
     BrowserModule,

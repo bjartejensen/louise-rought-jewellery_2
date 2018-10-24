@@ -14,9 +14,10 @@ import { FrontpageNewComponent } from './frontpage-new/frontpage-new.component';
 import {MetalsComponent} from './metals/metals.component';
 import {SingleJewelleryComponent} from './single-jewellery/single-jewellery.component';
 import {SustanabilityComponent} from './sustanability/sustanability.component';
+import {MegaMenuComponent} from './mega-menu/mega-menu.component';
 
 const routes: Routes=[
-    {path:"",component: FrontpageNewComponent},
+    {path:"",component: MegaMenuComponent},
     {path:"about",component: AboutComponent},
     {path:"gallery",component: GalleryNewComponent},
     {path:"gallery/:id",component:SingleJewelleryComponent,pathMatch: 'full'},
@@ -26,7 +27,7 @@ const routes: Routes=[
     {path: "vaerkstedet", component:VaerkstedetComponent},
     {path: "sustainability",component:SustanabilityComponent},
     {path:"find",component: FindComponent},
-    { path: '**', component: FrontpageNewComponent }
+    { path: '**', component: MegaMenuComponent }
 ]
 
 @NgModule({

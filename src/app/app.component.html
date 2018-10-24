@@ -18,7 +18,9 @@
         
 <body>
 
-<div class="landing-page-wrapper" *ngIf="showMegaMenu" >
+<app-mega-menu></app-mega-menu>
+
+<!-- <div class="landing-page-wrapper" *ngIf="showMegaMenu" >
   
   <div class="close-button">
       <a (click)="toggleMegaMenu($event)"><h4>Close</h4></a>
@@ -27,16 +29,15 @@
   <div *ngIf="showMegaMenu" class="menu" appMegaMenu >
             <ul>
                 <a id="home" (click)="toggleMegaMenu($event)" [routerLink]="['/frontpage']" >Home</a>
-               <!-- <a id="about" (click)="toggleMegaMenu($event)" [routerLink]="['/about']" >About</a>-->
                 <a id="gallery" (click)="toggleMegaMenu($event)"  [routerLink]="['/gallery']">Gallery</a> 
                 <a id="sapphires" (click)="toggleMegaMenu($event)" [routerLink]="['/metals']" >Sapphires</a>
                 <a id="sustainability" (click)="toggleMegaMenu($event)" [routerLink]="['/sustainability']" >Sustainability</a>
                 <a id="vaerkstedet" (click)="toggleMegaMenu($event)" [routerLink]="['/vaerkstedet']" >Vaerkstedet</a>
-               <!--  <a id="contact" (click)="toggleMegaMenu($event)"  [routerLink]="['/contact']">Contact</a> -->
                 <a id="find" (click)="toggleMegaMenu($event)"   [routerLink]="['/find']">Find</a>
             </ul>
           </div> 
-</div> 
+</div>  -->
+
    <router-outlet></router-outlet>   
 </body>
  
